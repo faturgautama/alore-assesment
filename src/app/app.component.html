@@ -1,0 +1,31 @@
+<mat-sidenav-container class="sidenav_container" [hasBackdrop]="false">
+    <!-- Sidenav -->
+    <mat-sidenav opened mode="side" class="sidenav_open">
+        <div class="row">
+            <div class="col-12" style="margin-bottom: 3rem;">
+                <p class="sidenav_brand">Prospector</p>
+            </div>
+            <div class="col-12" style="margin-bottom: 1rem;">
+                <p class="sidenav_item_title">SEGMENTS</p>
+            </div>
+            <div *ngFor="let item of SegmentDatasource" class="col-12"
+                style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                <ngx-emoji emoji="{{ item.icon }}" [size]="24"></ngx-emoji>
+                <p class="sidenav_item" style="margin-bottom: 10px; margin-left: 0.5rem;">
+                    {{ item.title }}
+                </p>
+            </div>
+            <div class="col-12" style="position: absolute; top: 90%; width: 250px; text-align: center;">
+                <button class="confirm" type="button" (click)="handleOpenDialog()">
+                    Add Segments
+                </button>
+            </div>
+        </div>
+    </mat-sidenav>
+
+    <!-- Content -->
+    <mat-sidenav-content class="sidenav_content">
+        <app-navbar></app-navbar>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

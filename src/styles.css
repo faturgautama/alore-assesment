@@ -1,0 +1,181 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@ctrl/ngx-emoji-mart/picker";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif !important;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.col-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.col-11 {
+  flex: 0 0 auto;
+  width: 91.66666667%;
+}
+
+.col-10 {
+  flex: 0 0 auto;
+  width: 83.33333333%;
+}
+
+.col-9 {
+  flex: 0 0 auto;
+  width: 75%;
+}
+
+.col-8 {
+  flex: 0 0 auto;
+  width: 66.66666667%;
+}
+
+.col-7 {
+  flex: 0 0 auto;
+  width: 58.33333333%;
+}
+
+.col-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.col-5 {
+  flex: 0 0 auto;
+  width: 41.66666667%;
+}
+
+.col-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+
+.col-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.col-2 {
+  flex: 0 0 auto;
+  width: 16.66666667%;
+}
+
+.col-1 {
+  flex: 0 0 auto;
+  width: 8.33333333%;
+}
+
+.w-100 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+  max-height: 100%;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+/** Sidenav Section **/
+.sidenav_container {
+  height: 100vh;
+}
+
+p.sidenav_brand {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #181818;
+}
+
+p.sidenav_item_title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 12px;
+  color: rgba(60, 60, 60, 0.7);
+}
+
+p.sidenav_item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 12px;
+  color: #181818;
+}
+
+p.sidenav_item.active {
+  color: #334bfa;
+}
+
+.sidenav_content {
+  background-color: white;
+  padding: 0.5rem;
+}
+
+.mat-drawer.sidenav_open {
+  width: 280px;
+  padding: 1rem;
+  background-color: #f1f1f1 !important;
+  border-right: 1px solid #d4d4d4 !important;
+}
+
+.mat-drawer-container {
+  background-color: transparent !important;
+}
+
+.mat-toolbar {
+  background-color: white !important;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.text-black {
+  color: black !important;
+}
+
+button.close {
+  background: gray;
+  border: 0px;
+  font-size: 18px;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: white;
+}
+
+button.confirm {
+  background: white;
+  border: 2px solid #334bfa;
+  font-size: 18px;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: #334bfa;
+  margin-left: 1rem;
+}

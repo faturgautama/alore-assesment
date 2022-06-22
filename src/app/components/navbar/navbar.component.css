@@ -1,0 +1,10 @@
+span.navbar_brand {
+  font-size: 17px;
+  font-weight: 600;
+  color: black;
+}
+
+span.navbar_item {
+  font-size: 15px;
+  font-weight: 500;
+}

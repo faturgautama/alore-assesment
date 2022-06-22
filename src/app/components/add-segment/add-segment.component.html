@@ -1,0 +1,41 @@
+<h1 mat-dialog-title>Add a segment</h1>
+<div mat-dialog-content>
+    <form [formGroup]="FormAddSegment" class="form">
+        <div class="row">
+            <!-- Title -->
+            <div class="col-12" style="margin-bottom: 1rem;">
+                <mat-form-field class="w-100" appearance="fill">
+                    <mat-label>Name *</mat-label>
+                    <input type="text" matInput formControlName="title" placeholder="Ex. Computer Software">
+                    <mat-error *ngIf="title.invalid">
+                        Name is <strong>required</strong>
+                    </mat-error>
+                </mat-form-field>
+            </div>
+
+            <!-- Icon -->
+            <div class="col-12" style="margin-bottom: 1rem;">
+                <mat-form-field class="w-100" appearance="fill">
+                    <mat-label>Icon</mat-label>
+                    <input id="icon_segment" type="text" matInput formControlName="icon" readonly
+                        (click)="handleClickIcon(ShowEmojiPicker)">
+                </mat-form-field>
+                <emoji-mart *ngIf="ShowEmojiPicker" emoji="point_up" class="w-100" [isNative]="true"
+                    [hideObselete]="true" (emojiClick)="handleEmojiSelect($event)">
+                </emoji-mart>
+            </div>
+
+            <!-- Description -->
+            <div class="col-12">
+                <mat-form-field class="w-100" appearance="fill">
+                    <mat-label>Description</mat-label>
+                    <textarea matInput></textarea>
+                </mat-form-field>
+            </div>
+        </div>
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-button class="close" (click)="addTable(FormAddSegment.value)">Add</button>
+    <button mat-button class="confirm" (click)="closeDialog()">Cancel</button>
+</div>
